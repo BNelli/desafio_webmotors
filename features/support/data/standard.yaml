@@ -1,0 +1,21 @@
+makes: ['Ford', 'Chevrolet', 'Honda']
+
+models: ['Agile', 'Astra', 'Onix', 'City', 'CRV', 'Fit', 'Ecosport', 'Fussion']
+
+versions: ['1.5 DX 16V FLEX 4P AUTOMÁTICO',
+           '1.5 LX 16V FLEX 4P MANUAL',
+           '2.0 EXL 4X4 16V GASOLINA 4P AUTOMÁTICO', 
+           '1.8 16V EVO FLEX FREEDOM OPEN EDITION AUTOMÁTICO', 
+           '1.0 MPI EL 8V FLEX 4P MANUAL']
+
+http_response_status:
+  ok: 200
+  bad_request: 400
+
+default_errors:
+  messages:
+    message_request_invalid: 'The request is invalid.'
+  details:
+    details_parameter_contains_null_entry_make_id: "The parameters dictionary contains a null entry for parameter 'MakeID' of non-nullable type 'System.Int32' for method 'System.Collections.Generic.List`1[Swagger.Models.Model] Model(Int32)' in 'Swagger.Controllers.OnlineChallengeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter."
+    details_parameter_contains_null_entry_model_id: "The parameters dictionary contains a null entry for parameter 'ModelID' of non-nullable type 'System.Int32' for method 'System.Collections.Generic.List`1[Swagger.Models.Version] Version(Int32)' in 'Swagger.Controllers.OnlineChallengeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter."
+    details_parameter_contains_null_entry_page: "The parameters dictionary contains a null entry for parameter 'Page' of non-nullable type 'System.Int32' for method 'System.Collections.Generic.List`1[Swagger.Models.Vehicle] Vehicle(Int32)' in 'Swagger.Controllers.OnlineChallengeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter."
